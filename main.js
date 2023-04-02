@@ -4,6 +4,8 @@ import configStore from './src/services/config';
 
 import Header from './src/templates/header';
 import Layout from './src/templates/layout';
+import Editor from "./src/components/Editor";
+import toHtml from "./src/util/toHtml";
 
 const setColor = () =>{
   document.documentElement.dataset.theme=configStore.getValue('colorMode');
@@ -19,6 +21,7 @@ Header.querySelector(".light-switch").addEventListener("click", (e)=>{
   e.currentTarget.querySelector("i").classList.toggle("bi-brightness-high");
   e.currentTarget.querySelector("i").classList.toggle("bi-moon-stars");
 })
-
+Layout.querySelector('.main-content').appendChild(toHtml(`<div class='editor' />`));
+Editor({selector: '.editor'});
 
 configStore.addValueListener('colorMode', setColor);
