@@ -287,6 +287,13 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+chordsheetjs@^7.17.0:
+  version "7.17.0"
+  resolved "https://registry.yarnpkg.com/chordsheetjs/-/chordsheetjs-7.17.0.tgz#df0a61d7ec6f8046b2d0e94ba59a4d4e83524847"
+  integrity sha512-6i8jjoUOKsZhmyEunWujKFx8naqZRpH35BeDEUOkT52+3CNf3K+Nkr4iGuGQQcszKYq2+ZEs8SUHvETzNWmOvw==
+  dependencies:
+    lodash.get "^4.4.2"
+
 clone@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
@@ -707,6 +714,11 @@ lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
+
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==
 
 ltgt@^2.1.2:
   version "2.2.1"

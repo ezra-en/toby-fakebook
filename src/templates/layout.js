@@ -14,7 +14,7 @@ const Layout = toHtml(`<main class='container flex'>
       </div>
     </div>
   </div>
-  <div class='main-content w-full max-h-full'></div>
+  <div class='main-content w-full max-h-full flex gap-4'></div>
 </main>`);
 
 export default Layout;

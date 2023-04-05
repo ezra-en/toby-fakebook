@@ -9,3 +9,21 @@ html, body {
   width: 100vw;
   height: 100vh;
 }
+
+.paragraph {
+  @apply mb-5;
+}
+
+.paragraph .row:nth-child(even){
+  @apply pl-4;
+}
+.row {
+  @apply h-10 flex;
+}
+.column {
+  @apply flex flex-col justify-between;
+}
+
+.chord {
+  @apply relative w-1;
+}

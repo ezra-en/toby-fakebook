@@ -6,6 +6,7 @@ import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
 import styles from './Editor.module.css';
 
 const Editor = ({selector}) => {
+  let listeners = [];
 
   const ydoc = new Y.Doc();
   // define a shared text type on the document
@@ -32,6 +33,19 @@ const Editor = ({selector}) => {
 
   provider.connect();
 
+  ytext.observe(
+    ()=>{
+      const string = ytext.toJSON();
+      listeners.forEach( listener => {
+        listener(string);
+      })
+    }
+  );
+
+  return {
+    subscribe(listenerFn){ listeners = [...listeners, listenerFn]; },
+    unsubscribe(listenerFn){ listeners = listeners.filter(fn => fn !== listenerFn)}
+  }
 }
 
 

@@ -5,6 +5,7 @@ import configStore from './src/services/config';
 import Header from './src/templates/header';
 import Layout from './src/templates/layout';
 import Editor from "./src/components/Editor";
+import ChordProViewer from "./src/components/Viewer";
 import toHtml from "./src/util/toHtml";
 
 const setColor = () =>{
@@ -21,7 +22,8 @@ Header.querySelector(".light-switch").addEventListener("click", (e)=>{
   e.currentTarget.querySelector("i").classList.toggle("bi-brightness-high");
   e.currentTarget.querySelector("i").classList.toggle("bi-moon-stars");
 })
-Layout.querySelector('.main-content').appendChild(toHtml(`<div class='editor' />`));
-Editor({selector: '.editor'});
-
+Layout.querySelector('.main-content').append(toHtml(`<div class='editor w-[45%]' />`), toHtml("<div class='song-view w-[45%]' />"));
+const editor = Editor({selector: '.editor'});
+let viewer = ChordProViewer('.song-view');
+editor.subscribe(viewer.display);
 configStore.addValueListener('colorMode', setColor);
