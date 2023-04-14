@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.com/svgjs" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 685.2596069335938" class='chord-chart ukulele C'>
+  <title>Chord diagram created with chordpic.com</title><text x="200" y="-0.7666463851928711"
+    font-family="Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif" font-size="48" text-anchor="middle"
+    fill="#000000" class="title">
+    <tspan dy="62.400000000000006" x="200">C</tspan>
+  </text>
+  <circle r="24" cx="80" cy="111.29765701293945" fill="none" stroke-width="2" stroke="#000000"
+    class="open-string open-string-0"></circle>
+  <circle r="24" cx="160" cy="111.29765701293945" fill="none" stroke-width="2" stroke="#000000"
+    class="open-string open-string-1"></circle>
+  <circle r="24" cx="240" cy="111.29765701293945" fill="none" stroke-width="2" stroke="#000000"
+    class="open-string open-string-2"></circle>
+  <line x1="79" y1="156.29765701293945" x2="321" y2="156.29765701293945" stroke-width="10" stroke="#000000"></line>
+  <line x1="80" y1="257.29765701293945" x2="320" y2="257.29765701293945" stroke-width="2" stroke="#000000"></line>
+  <line x1="80" y1="353.29765701293945" x2="320" y2="353.29765701293945" stroke-width="2" stroke="#000000"></line>
+  <line x1="80" y1="449.29765701293945" x2="320" y2="449.29765701293945" stroke-width="2" stroke="#000000"></line>
+  <line x1="80" y1="545.2976570129395" x2="320" y2="545.2976570129395" stroke-width="2" stroke="#000000"></line>
+  <line x1="80" y1="641.2976570129395" x2="320" y2="641.2976570129395" stroke-width="2" stroke="#000000"></line>
+  <line x1="80" y1="161.29765701293945" x2="80" y2="642.2976570129395" stroke-width="2" stroke="#000000"></line>
+  <line x1="160" y1="161.29765701293945" x2="160" y2="642.2976570129395" stroke-width="2" stroke="#000000"></line>
+  <line x1="240" y1="161.29765701293945" x2="240" y2="642.2976570129395" stroke-width="2" stroke="#000000"></line>
+  <line x1="320" y1="161.29765701293945" x2="320" y2="642.2976570129395" stroke-width="2" stroke="#000000"></line>
+  <circle r="29.6" cx="320" cy="401.29765701293945" fill="#000000" stroke-width="0" stroke="#000000"
+    class="finger finger-string-3 finger-fret-2 finger-string-3-fret-2 finger-circle"></circle><text x="80"
+    y="660.4976570129395" font-family="Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif" font-size="28"
+    text-anchor="middle" dominant-baseline="central" fill="#000000" class="tuning tuning-0"></text><text x="160"
+    y="660.4976570129395" font-family="Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif" font-size="28"
+    text-anchor="middle" dominant-baseline="central" fill="#000000" class="tuning tuning-1"></text><text x="240"
+    y="660.4976570129395" font-family="Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif" font-size="28"
+    text-anchor="middle" dominant-baseline="central" fill="#000000" class="tuning tuning-2"></text><text x="320"
+    y="660.4976570129395" font-family="Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif" font-size="28"
+    text-anchor="middle" dominant-baseline="central" fill="#000000" class="tuning tuning-3"></text><text x="200"
+    y="654.7310106277466" font-family="Arial, &quot;Helvetica Neue&quot;, Helvetica, sans-serif" font-size="16"
+    text-anchor="middle" fill="rgba(0, 0, 0, 0.5)" class="watermark">
+    <tspan dy="20.8" x="200">created with chordpic.com</tspan>
+  </text>
+  <circle r="0" cx="0" cy="0" fill="none" stroke-width="0" stroke="transparent" class="top-left"></circle>
+  <circle r="0" cx="400" cy="0" fill="none" stroke-width="0" stroke="transparent" class="top-right"></circle>
+</svg>

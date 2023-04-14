@@ -18,12 +18,25 @@ html, body {
   @apply pl-4;
 }
 .row {
-  @apply h-10 flex;
+  @apply h-11 flex;
 }
 .column {
-  @apply flex flex-col justify-between;
+  @apply flex flex-col justify-end;
 }
 
 .chord {
-  @apply relative w-1;
+  @apply absolute mb-5;
+}
+.column:has(.chord) .lyrics:not(:empty) {
+  @apply mr-1;
+}
+
+.chords-list {
+  @apply h-full flex flex-wrap;
+}
+.chords-list .chord-chart {
+  @apply w-[35%];
+  stroke-width: 1px;
+  fill: var(--backgroundSecondary);
+  stroke: var(--content2);
 }

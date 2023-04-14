@@ -3,6 +3,7 @@ import toHtml from '../../util/toHtml';
 
 
 const ChordProViewer = (selector) => {
+  let listeners = [];
   const displayEl = document.querySelector(selector);
   const display = (chordSheet) =>{
     while(displayEl.firstChild)
@@ -12,12 +13,19 @@ const ChordProViewer = (selector) => {
     const formatter = new ChordSheetJS.HtmlDivFormatter();
     
     const song = parser.parse(chordSheet);
+    const formattedSong = toHtml(`<div>${formatter.format(song)}</div>`)
+    displayEl.append(formattedSong)
 
-    displayEl.append(toHtml(`<div>${formatter.format(song)}</div>`))
+    listeners.forEach(listener=>listener(formattedSong));
   }
 
+  const subscribe = (listener)=>listeners = [...listeners, listener];
+  const unsubscribe = (listener) => listeners = listeners.filter(func=>func!==listener);
+
   return {
-    display
+    display,
+    subscribe,
+    unsubscribe
   }
 }
 
