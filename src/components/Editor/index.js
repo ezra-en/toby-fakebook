@@ -1,9 +1,11 @@
 import * as Y from 'yjs';
+
 import { IndexeddbPersistence } from 'y-indexeddb';
 import { WebrtcProvider } from 'y-webrtc';
 import { MonacoBinding } from 'y-monaco';
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
 import styles from './Editor.module.css';
+
 
 const Editor = ({selector}) => {
   let listeners = [];
@@ -35,7 +37,7 @@ const Editor = ({selector}) => {
 
   ytext.observe(
     ()=>{
-      const string = ytext.toJSON();
+      const string = ytext.toString();
       listeners.forEach( listener => {
         listener(string);
       })

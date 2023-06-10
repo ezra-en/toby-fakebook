@@ -11,6 +11,7 @@ const Layout = toHtml(`<main class='container flex'>
       <div class='drawer-content'>
         <label class='absolute top-4 right-4' for='drawer-left'><span class='bi bi-x-circle text-secondary font-black text-xl'></span></label>
         <p>Sidebar Content</p>
+        <button class='set-save'>Setup Save</button>
       </div>
     </div>
   </div>
